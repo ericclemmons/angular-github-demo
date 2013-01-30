@@ -18,14 +18,14 @@ Let's see how many of these features we can build in!
 
 0. Setup Angular App (`ng-app`, `ng-model`, `ng-bind`)
 
-1. Project API
+1. Project API (https://api.github.com/users/:user/repos)
 
     1. API called for username/organization upon `submit`
     2. Iterate over projects in `#left`
     3. Filter projects via search
     4. Replace placeholder text in `#main` with project data
 
-2. Issues API
+2. Issues API (https://api.github.com/repos/:user/:project/issues?state=open)
 
     1. Selected project calls Issues API
     2. Iterate over issues in `#main`
