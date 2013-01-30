@@ -39,7 +39,9 @@ angular
     };
 
     $scope.$watch('repo', function(repo) {
-      $scope.issues = IssueService.query({ username: $scope.username, repo: repo.name });
+      if (repo) {
+        $scope.issues = IssueService.query({ username: $scope.username, repo: repo.name });
+      }
     });
   })
 ;
