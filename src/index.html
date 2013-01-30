@@ -101,11 +101,11 @@
           <div class="tab" ng-show="issues.data.length">
             <table class="list">
               <tbody>
-                <tr>
-                  <th>#</th>
-                  <td>Assignee</td>
-                  <td>Title</td>
-                  <td>Last Updated</td>
+                <tr ng-repeat="item in issues.data">
+                  <td>#{{ item.number }}</td>
+                  <td><img ng-src="{{ item.assignee.avatar_url }}" width="24" height="24" /></td>
+                  <th><a ng-href="{{ item.html_url }}" target="_blank">{{ item.title }}</a></th>
+                  <td>{{ item.updated_at | date:'short' }}</td>
                 </tr>
               </tbody>
 
