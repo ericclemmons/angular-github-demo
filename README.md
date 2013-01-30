@@ -14,18 +14,24 @@ Author
 Features
 --------
 
-1. **Required**
+Let's see how many of these features we can build in!
 
-    1. Dynamic organization/username
-    2. Projects pulled via API based on username
-    3. Open issues/PRs pulled via API based on selected project
+1. Project API
 
-2. *Optional*
+    1. API called for username/organization upon `enter`
+    2. Iterate over projects in `#left`
+    3. Filter projects via search
+    4. Replace placeholder text in `#main` with project data
 
-    1. Search Filter
-    2. Travis CI
-    3. Issues vs. PR tab
-    4. Comments
+2. Issues API
+
+    1. Selected project calls Issues API
+    2. Iterate over issues in `#main`
+    3. Separate issues from pull requests
+    4. TravisCI build statuses
+    5. Search filters projects and issues
+
+3. Organization & Architecture
 
 For more information, see the exhaustive, highly detailed wireframe:
 
