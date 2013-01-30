@@ -54,6 +54,6 @@ Copyright (c) 2013 Eric Clemmons Licensed under the MIT license.
 [1.3]: https://github.com/ericclemmons/angular-github-demo/compare/1.2...1.3
 [1.4]: https://github.com/ericclemmons/angular-github-demo/compare/1.3...1.4
 [2]: https://github.com/ericclemmons/angular-github-demo/compare/2...2.2
-[2.1]: https://github.com/ericclemmons/angular-github-demo/compare/2.0...2.1
+[2.1]: https://github.com/ericclemmons/angular-github-demo/compare/2...2.1
 [2.2]: https://github.com/ericclemmons/angular-github-demo/compare/2.1...2.2
 [3]: https://github.com/ericclemmons/angular-github-demo/compare/2.2...3
