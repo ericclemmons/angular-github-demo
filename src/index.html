@@ -50,19 +50,19 @@
         </ul>
 
         <ul id="repos">
-          <li>
+          <li ng-repeat="repo in repos.data">
 
             <div class="slug-and-status">
               <span class="status"></span>
-              <a href="#" class="slug">{{ username }}/project</a>
+              <a href="#" class="slug">{{ repo.name }}</a>
             </div>
 
-            <span class="last_build">
-              # Issues
+            <span class="last_build" ng-show="repo.open_issues">
+              {{ repo.open_issues }}
             </span>
 
             <p class="summary">
-              Description
+              {{ repo.description }}
             </p>
 
             <div class="indicator"><span></span></div>
