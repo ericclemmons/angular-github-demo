@@ -1,5 +1,5 @@
-AngularJS+Github Demo
-===================
+AngularJS + Github Demo
+=======================
 
 This project serves as a progressive, working example of a demo
 application consuming the [Github API][github] & using [AngularJS][angular].
