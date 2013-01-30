@@ -75,18 +75,18 @@
       <div id="main" ng-show="repos.data.length">
         <div id="repo">
 
-          <h3>{{ username }}/project</h3>
+          <h3>{{ repo.full_name }}</h3>
 
           <p class="description">
-            description
+            {{ repo.description }}
           </p>
 
           <ul class="github-stats">
             <li>
-              <a class="watchers" title="Watchers"># watchers</a>
+              <a class="watchers" title="Watchers">{{ repo.watchers }}</a>
             </li>
             <li>
-              <a class="forks" title="Forks"># forks</a>
+              <a class="forks" title="Forks">{{ repo.forks }}</a>
             </li>
           </ul>
 
