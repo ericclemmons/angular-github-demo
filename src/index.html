@@ -38,7 +38,7 @@
       <div id="left" ng-show="repos.data.length">
 
         <div id="search_box">
-          <input type="text" placeholder="Search projects..." />
+          <input ng-model="search" type="text" placeholder="Search projects..." />
         </div>
 
         <ul class="tabs">
@@ -50,7 +50,7 @@
         </ul>
 
         <ul id="repos">
-          <li ng-repeat="repo in repos.data">
+          <li ng-repeat="repo in repos.data | filter:search">
 
             <div class="slug-and-status">
               <span class="status"></span>
