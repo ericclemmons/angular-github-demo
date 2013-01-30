@@ -6,6 +6,7 @@ application consuming the [Github API][github] & using [AngularJS][angular].
 
 ![Screenshot](https://raw.github.com/ericclemmons/angular-github-demo/master/screenshot.png)
 
+Part of the discussion will go over recent technology [trends](https://raw.github.com/ericclemmons/angular-github-demo/master/trends.html)
 
 Author
 ------

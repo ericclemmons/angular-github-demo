@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Technology &amp; Frontend Framework Trends</title>
+
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1">
+    <meta name="viewport"               content="width=device-width">
+    <meta name="description"            content="Technology &amp; Frontend Framework Trends">
+    <meta name="author"                 content="Eric Clemmons">
+
+    <link href="src/app.css" rel="stylesheet">
+    <style>
+      chart { width: 864px; height: 286px; display: block; box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.1); overflow: hidden; margin-bottom: 5em; }
+    </style>
+  </head>
+
+  <body id="home">
+
+    <div class="application">
+      <div id="top" class="row-fluid">
+        <h1>Google Trends</h1>
+
+        <ul id="navigation">
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#frameworks">Frameworks</a></li>
+        </ul>
+      </div>
+
+      <div id="main">
+
+        <h2 id="technologies">Technologies</h2>
+        <chart>
+          <script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-US&q=angularjs,+mootools,+zend+framework,+symfony2,+nodejs&geo=US&date=1/2006+86m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=1024&h=480"></script>
+        </chart>
+
+        <h2 id="frameworks">Frontend Frameworks</h2>
+        <chart>
+          <script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-US&q=angularjs,+backbonejs,+knockoutjs,+emberjs&geo=US&date=5/2011+22m&cmpt=q&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=1024&h=480"></script>
+        </chart>
+
+      </div>
+    </div>
+
+  </body>
+</html>
