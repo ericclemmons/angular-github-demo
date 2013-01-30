@@ -30,21 +30,18 @@ Features
 
 Follow along with Github to see how these were built!
 
-0. [Compare][0] - Setup Angular App (`ng-app`, `ng-model`, `ng-bind`)
+- [0.][0] - Setup Angular App (`ng-app`, `ng-model`, `ng-bind`)
+    - [1.][1] - Project API (https://api.github.com/users/:user/repos)
+    - [1.1.][1.1] - API called for username/organization upon `submit`
+    - [1.2.][1.2] - Iterate over projects in `#left`
+    - [1.3.][1.3] - Filter projects via search
+    - [1.4.][1.4] - Replace placeholder text in `#main` with project data
 
-1. [Compare][1] - Project API (https://api.github.com/users/:user/repos)
+- [2.][2] - Issues API (https://api.github.com/repos/:user/:project/issues?state=open)
+    - [2.1.][2.1] - Selected project calls Issues API
+    - [2.2.][2.2] - Iterate over issues in `#main`
 
-    1. [Compare][1.1] - API called for username/organization upon `submit`
-    2. [Compare][1.2] - Iterate over projects in `#left`
-    3. [Compare][1.3] - Filter projects via search
-    4. [Compare][1.4] - Replace placeholder text in `#main` with project data
-
-2. [Compare][2] - Issues API (https://api.github.com/repos/:user/:project/issues?state=open)
-
-    1. [Compare][2.1] - Selected project calls Issues API
-    2. [Compare][2.2] - Iterate over issues in `#main`
-
-3. [Compare][3] - Organization & Architecture
+- [3.][3] - Organization & Architecture
 
 For more information, see the exhaustive, highly detailed wireframe:
 
