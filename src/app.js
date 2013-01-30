@@ -22,6 +22,10 @@ angular
     $scope.loadRepos = function() {
       $scope.repos = RepoService.query({ username: $scope.username });
     }();
+
+    $scope.selectRepo = function(repo) {
+      $scope.repo = repo;
+    };
   })
 ;
 
