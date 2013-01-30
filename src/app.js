@@ -27,7 +27,7 @@ angular
   })
 
   // Registered via `ng-controller`
-  .controller('DemoController', function($scope, RepoService) {
+  .controller('DemoController', function($scope, RepoService, IssueService) {
     $scope.username = 'ericclemmons';
 
     $scope.loadRepos = function() {
@@ -37,6 +37,10 @@ angular
     $scope.selectRepo = function(repo) {
       $scope.repo = repo;
     };
+
+    $scope.$watch('repo', function(repo) {
+      $scope.issues = IssueService.query({ username: $scope.username, repo: repo.name });
+    });
   })
 ;
 
