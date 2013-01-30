@@ -29,9 +29,6 @@ Let's see how many of these features we can build in!
 
     1. Selected project calls Issues API
     2. Iterate over issues in `#main`
-    3. Separate issues from pull requests
-    4. TravisCI build statuses
-    5. Search filters projects and issues
 
 3. Organization & Architecture
 
