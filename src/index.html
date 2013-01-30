@@ -15,7 +15,7 @@
     <link href="app.css" rel="stylesheet">
   </head>
 
-  <body id="home" ng-app>
+  <body id="home" ng-app="app">
 
     <div class="application" ng-controller="DemoController">
       <div id="top" class="row-fluid">
@@ -27,7 +27,7 @@
             <a href="https://github.com/ericclemmons/angular-github-demo">Source</a>
           </li>
           <li class="profile menu">
-            <form>
+            <form ng-submit="loadRepos()">
               <input ng-model="username" type="search" placeholder="Github Username" autofocus />
             </form>
           </li>
