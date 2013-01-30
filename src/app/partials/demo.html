@@ -1,0 +1,101 @@
+<div id="top" class="row-fluid">
+  <h1>AngularJS + Github Demo</h1>
+
+  <ul id="navigation">
+    <li class="home"><a>Home</a></li>
+    <li>
+      <a href="https://github.com/ericclemmons/angular-github-demo">Source</a>
+    </li>
+    <li class="profile menu">
+      <form ng-submit="loadRepos()">
+        <input ng-model="username" type="search" placeholder="Github Username" autofocus />
+      </form>
+    </li>
+  </ul>
+
+</div>
+
+<div id="left" ng-show="repos.data.length">
+
+  <div id="search_box">
+    <input ng-model="search" type="text" placeholder="Search projects..." />
+  </div>
+
+  <ul class="tabs">
+    <li class="active">
+      <h5>
+        <a>Repositories ({{ repos.data.length }})</a>
+      </h5>
+    </li>
+  </ul>
+
+  <ul id="repos">
+    <li ng-repeat="item in repos.data | filter:search | orderBy:'-open_issues'" ng-class="{true:'selected', false:''}[item == repo]" ng-click="selectRepo(item)">
+
+      <div class="slug-and-status">
+        <span class="status"></span>
+        <a href="#" class="slug">{{ item.name }}</a>
+      </div>
+
+      <span class="last_build" ng-show="item.open_issues">
+        {{ item.open_issues }}
+      </span>
+
+      <p class="summary">
+        {{ item.description }}
+      </p>
+
+      <div class="indicator"><span></span></div>
+
+    </li>
+  </ul>
+
+</div>
+
+<div id="main" ng-show="repo">
+  <div id="repo">
+
+    <h3>{{ repo.full_name }}</h3>
+
+    <p class="description">
+      {{ repo.description }}
+    </p>
+
+    <ul class="github-stats">
+      <li>
+        <a class="watchers" title="Watchers">{{ repo.watchers }}</a>
+      </li>
+      <li>
+        <a class="forks" title="Forks">{{ repo.forks }}</a>
+      </li>
+    </ul>
+
+    <ul class="tabs" ng-show="issues.data.length">
+      <li class="active">
+        <h5>
+          <a>Issues</a>
+        </h5>
+      </li>
+    </ul>
+
+    <div class="tab" ng-show="issues.data.length">
+      <table class="list">
+        <tbody>
+          <tr ng-repeat="item in issues.data">
+            <td>#{{ item.number }}</td>
+            <td><img ng-src="{{ item.assignee.avatar_url }}" width="24" height="24" /></td>
+            <th><a ng-href="{{ item.html_url }}" target="_blank">{{ item.title }}</a></th>
+            <td>{{ item.updated_at | date:'short' }}</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="right">
+
+</div>
