@@ -50,7 +50,7 @@
         </ul>
 
         <ul id="repos">
-          <li ng-repeat="item in repos.data | filter:search" ng-class="{true:'selected', false:''}[item == repo]" ng-click="selectRepo(item)">
+          <li ng-repeat="item in repos.data | filter:search | orderBy:'-open_issues'" ng-class="{true:'selected', false:''}[item == repo]" ng-click="selectRepo(item)">
 
             <div class="slug-and-status">
               <span class="status"></span>
