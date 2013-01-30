@@ -29,7 +29,7 @@ Features
 
 For more information, see the exhaustive, highly detailed wireframe:
 
-![Features](features.jpg)
+![Features](https://raw.github.com/ericclemmons/angular-github-demo/master/features.jpg)
 
 
 License
