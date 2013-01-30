@@ -50,19 +50,19 @@
         </ul>
 
         <ul id="repos">
-          <li ng-repeat="repo in repos.data | filter:search">
+          <li ng-repeat="item in repos.data | filter:search" ng-class="{true:'selected', false:''}[item == repo]" ng-click="selectRepo(item)">
 
             <div class="slug-and-status">
               <span class="status"></span>
-              <a href="#" class="slug">{{ repo.name }}</a>
+              <a href="#" class="slug">{{ item.name }}</a>
             </div>
 
-            <span class="last_build" ng-show="repo.open_issues">
-              {{ repo.open_issues }}
+            <span class="last_build" ng-show="item.open_issues">
+              {{ item.open_issues }}
             </span>
 
             <p class="summary">
-              {{ repo.description }}
+              {{ item.description }}
             </p>
 
             <div class="indicator"><span></span></div>
