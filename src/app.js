@@ -15,6 +15,17 @@ angular
     });
   })
 
+  .factory('IssueService', function($resource) {
+    return $resource('https://api.github.com/repos/:username/:repo/issues', {
+      state: 'open'
+    }, {
+      query: {
+        method: 'JSONP',
+        params: { callback: 'JSON_CALLBACK' }
+      }
+    });
+  })
+
   // Registered via `ng-controller`
   .controller('DemoController', function($scope, RepoService) {
     $scope.username = 'ericclemmons';
