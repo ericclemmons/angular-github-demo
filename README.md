@@ -30,7 +30,7 @@ Follow along with Github to see how these were built!
     1. [Compare][2.1] - Selected project calls Issues API
     2. [Compare][2.2] - Iterate over issues in `#main`
 
-3. Organization & Architecture
+3. [Compare][3] - Organization & Architecture
 
 For more information, see the exhaustive, highly detailed wireframe:
 
@@ -56,3 +56,4 @@ Copyright (c) 2013 Eric Clemmons Licensed under the MIT license.
 [2]: https://github.com/ericclemmons/angular-github-demo/compare/2...2.2
 [2.1]: https://github.com/ericclemmons/angular-github-demo/compare/2.0...2.1
 [2.2]: https://github.com/ericclemmons/angular-github-demo/compare/2.1...2.2
+[3]: https://github.com/ericclemmons/angular-github-demo/compare/2.2...3
