@@ -4,6 +4,8 @@ AngularJS + Github Demo
 This project serves as a progressive, working example of a demo
 application consuming the [Github API][github] & using [AngularJS][angular].
 
+![Screenshot](https://raw.github.com/ericclemmons/angular-github-demo/master/screenshot.png)
+
 
 Author
 ------
