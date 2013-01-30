@@ -13,6 +13,18 @@ Author
 - [@ericclemmons][twitter]
 
 
+Running the Demo
+----------------
+
+    $ git clone git://github.com/ericclemmons/angular-github-demo.git
+    $ cd angular-github-demo
+    $ python -m SimpleHTTPServer 8000
+
+Now open [http://localhost:8000/](http://localhost:8000).
+
+You can then use `git checkout [BRANCH]` to see the app progress!
+
+
 Features
 --------
 
