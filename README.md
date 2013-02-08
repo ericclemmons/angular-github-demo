@@ -3,6 +3,9 @@ AngularJS + Github Demo
 
 *The [slides for this demo][slides] were presented at HoustonJS.*
 
+[See the Demo][demo]!
+---------------------
+
 This project serves as a progressive, working example of a demo
 application consuming the [Github API][github] & using [AngularJS][angular].
 
@@ -57,6 +60,7 @@ License
 Copyright (c) 2013 Eric Clemmons Licensed under the MIT license.
 
 
+[demo]: http://ericclemmons.github.com/angular-github-demo/
 [slides]: http://www.slideshare.net/ericclemmons/a-brief-into-to-angularjs
 [github]: http://developer.github.com/
 [angular]: http://angularjs.org/
