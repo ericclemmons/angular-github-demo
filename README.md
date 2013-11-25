@@ -76,3 +76,7 @@ Copyright (c) 2013 Eric Clemmons Licensed under the MIT license.
 [2.1]: https://github.com/ericclemmons/angular-github-demo/compare/2...2.1
 [2.2]: https://github.com/ericclemmons/angular-github-demo/compare/2.1...2.2
 [3]: https://github.com/ericclemmons/angular-github-demo/compare/2.2...3
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ericclemmons/angular-github-demo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
